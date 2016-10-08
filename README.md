@@ -16,5 +16,8 @@ House design cost calculator
 ## Deployed project URI
 http://www.epwoodworks.ru/costs.html
 
+## Git Pages
+https://web-developer-poletski.github.io/house_design_cost_calc/
+
 ## Releases
 https://github.com/web-developer-poletski/house_design_cost_calc/releases/tag/v1.0.0
