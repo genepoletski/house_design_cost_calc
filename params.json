@@ -1,0 +1,6 @@
+{
+  "name": "House design cost calc",
+  "tagline": "House design cost calculator",
+  "body": "# Project \"house_design_cost_calc\"\r\nHouse design cost calculator\r\n\r\n## Module features\r\n- set house parameters (area);\r\n- set house design sections and articles (architectural and structural arts e.t.c.);\r\n- store link to particular calculation;\r\n- restore design cost from URI reference;\r\n\r\n## Implementation\r\n- vanilla javascript;\r\n- object-oriented approach;\r\n- function class constructors;\r\n- object prototype inheritance;\r\n\r\n## Deployed project URI\r\nhttp://www.epwoodworks.ru/costs.html\r\n\r\n## Releases\r\nhttps://github.com/web-developer-poletski/house_design_cost_calc/releases/tag/v1.0.0\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
