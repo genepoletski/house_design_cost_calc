@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>epwoodworks</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/costs.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper header-top">
+            <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="" src="imgs/epwoodworks_logo.png" alt="ep wood works logo">
+                        </a>
+                    </div>
+                    <div class="main-title">
+                        <h1>Проекты деревянных домов и бань</h1>
+                        <h2>с вниманием к мелочам</h2>
+                    </div>
+            </div>
+        </div>
+        <div class="wrapper header-middle">
+            <div class="container">
+                <nav class="nav-primary">
+                    <a class="nav-button" href="index.html">Главная</a>
+                    <a class="nav-button" href="projects.html">Проекты</a>
+                    <a class="nav-button nav-button-primary" href="costs.html">Стоимость</a>
+                    <a class="nav-button" href="calcs.html">Расчеты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper main-mid">
+        <div class="container">
+            <div id="ep-design-cost" class="ep-dc">
+                <h2>Стоимость проекта</h2>
+                <div class="ep-dc-main-parameters">
+                    <div>
+                    <h3 class="ep-dc-sections-header">Основные параметры</h3>
+                    <div id="ep-design-cost-area" class="ep-dc-area">
+                        Площадь*: <input data-design-cost="design-cost-area" type="number" value="150" max="300">м<sup>2</sup>
+                    </div>
+                    <div class="ep-dc-comment">(*) В осях наружных стен</div>
+                    <div class="ep-dc-comment">(**) Свыше 300м<sup>2</sup> оценка стоимости на основании технического задания</div>
+                    <div id="ep-design-cost-floors" class="hide">
+                        Этажи:
+                        <input data-design-cost="design-cost-floors" type="radio" name="design-cost-floors" value="1">1
+                        <input data-design-cost="design-cost-floors" type="radio" name="design-cost-floors" value="2" checked="checked">2
+                        <input data-design-cost="design-cost-floors" type="radio" name="design-cost-floors" value="3">3
+                    </div>
+                </div>
+                <div>
+                    <h3 class="ep-dc-sections-header">Стоимость</h3>
+                    <div class="ep-dc-total-cost ep-dc-table">
+                        <div class="ep-dc-trow">
+                            <span class="ep-dc-tcell" data-design-cost="design-cost-cost">30 000 р.</span>
+                            <div class="ep-dc-tcell">
+                                <img id="ep-design-cost-store" class="ep-dc-glyphicon-small" src="imgs/compose-solid.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="ep-dc-sections">
+                    <!--<h3 class="ep-dc-sections-header ep-dc-structure">Состав проекта</h3>-->
+                    <div id="ep-design-cost-architect" class="ep-dc-section ep-dc-table">
+                        <h4 class="ep-dc-section-header">Архитектурные решения</h4>
+                        <div id="ep-design-cost-architect-base" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A1</u>: Планы, разрезы, фасады, виды*</span>
+                                <span data-design-cost="architect-base-cost">15 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-base-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-roof" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A2</u>: План кровли</span>
+                                <span data-design-cost="architect-roof-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-roof-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-electric" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A3</u>: План размещения выключателей и розеток</span>
+                                <span data-design-cost="architect-electric-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-electric-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-markers" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A4</u>: Маркировочный план</span>
+                                <span data-design-cost="architect-markers-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-markers-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-openings" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A5</u>: Ведомость оконных и дверных проемов</span>
+                                <span data-design-cost="architect-openings-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-openings-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-furniture" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A6</u>: План расстановки мебели</span>
+                                <span data-design-cost="architect-furniture-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-furniture-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-territory" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A7</u>: План участка</span>
+                                <span data-design-cost="architect-territory-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-territory-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-architect-measurements" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>A8</u>: Обмеры фундаментов**</span>
+                                <span data-design-cost="architect-measurements-cost">3 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-measurements-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="ep-dc-trow ep-dc-section-footer">
+                            <div class="ep-dc-tcell">
+                                Итого:
+                                <span data-design-cost="architect-cost">18 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="architect-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div class="ep-dc-comment">(*) Стоимость разработки архитектурных решений <u>A1</u> может быть снижена при условии предоставления заказчиком ранее запроектированных решений</div>
+                        <div class="ep-dc-comment">(**) п.<u>A8</u> Выезд на транспорте заказчика в пределах Ленинградской обл.</div>
+                        <div class="ep-dc-comment">(***) В стоимость входит внесение до 3х изменений в проект на стадии разработки архитектурных решений</div>
+                    </div>
+                    </div>
+                <div class="ep-dc-sections">
+                    <div id="ep-design-cost-construct" class="ep-dc-section ep-dc-table">
+                        <h4 class="ep-dc-section-header">Конструктивные решения*</h4>
+                        <div id="ep-design-cost-construct-base" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>K1</u>: Развертки, раскрой, спецификация</span>
+                                <span data-design-cost="construct-base-cost">10 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-base-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-construct-beams" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>K2</u>: План балок, спецификация</span>
+                                <span data-design-cost="construct-beams-cost">1 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-beams-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-construct-rafters" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>K3</u>: План стропил, спецификация**</span>
+                                <span data-design-cost="construct-rafters-cost">1 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-rafters-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-construct-foundation" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>K4</u>: План опорной плоскости фундаментов</span>
+                                <span data-design-cost="construct-foundation-cost">1 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-foundation-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-construct-framing" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>K5</u>: Решения по каркасным конструкциям</span>
+                                <span data-design-cost="construct-framing-cost">1 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-framing-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div id="ep-design-cost-construct-channels" class="ep-dc-item ep-dc-trow">
+                            <div class="ep-dc-tcell">
+                                <span><u>K6</u>: Каналы под электропроводку</span>
+                                <span data-design-cost="construct-channels-cost">1 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-channels-included" type="checkbox">
+                            </div>
+                        </div>
+                        <div  class="ep-dc-trow ep-dc-section-footer">
+                            <div class="ep-dc-tcell">
+                                Итого:
+                                <span data-design-cost="construct-cost">12 000 р.</span>
+                            </div>
+                            <div class="ep-dc-tcell">
+                                <input data-design-cost="construct-included" type="checkbox" checked="checked">
+                            </div>
+                        </div>
+                        <div class="ep-dc-comment">(*) Внесение изменений в конструктивные решения после их разработки производятся за дополнительную оплату</div>
+                        <div class="ep-dc-comment">(**) Стоимость разработки решений по стропильной системе <u>K3</u> может быть увеличена в зависимости от сложности крыши и этажности здания</div>
+                        <div class="ep-dc-comment">(***) Указанные стоимости не являются публичной оффертой</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper footer-mid">
+            <div class="container">
+                <div class="contacts">
+                    <h2>Контакты</h2>
+                    <p>Россия</p>
+                    <p>Санкт-Петербург</p>
+                    <p>Коммендантская пл.</p>
+                    <div>
+                        <a class="button" href="#">Связаться</a>
+                    </div>
+                </div>
+                <div class="sitemap">
+                    <h2>Карта сайта</h2>
+                    <a href="index.html">Главная</a>
+                    <a href="projects.html">Проекты</a>
+                    <a href="costs.html">Стоимость</a>
+                    <a href="calcs.html">Расчеты</a>
+                    <a href="#contacts">Контакты</a>
+                    <a href="#faq">F.A.Q.</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy 2015 EP WoodWorks All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="ep-dc-modal" class='hide' style="visibility: hidden"><span id="ep-dc-modal-close">X</span><div id='ep-dc-modal-inner' class="ep-dc-modal-inner"></div></div>
+    <script type="text/javascript" src="js/costs.js"></script>
+</body>
+</html>
